@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: burlywood;
+  box-sizing: border-box;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search-box {
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search-button {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+}
