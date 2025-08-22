@@ -29,4 +29,10 @@ body {
   font-size: 20px;
   border: none;
   border-radius: 3px;
+  background-color: chocolate;
+  color: white;
+}
+
+.search-button:active {
+  opacity: 0.5;
 }
