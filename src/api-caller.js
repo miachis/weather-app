@@ -7,8 +7,21 @@ export async function getData(location) {
       throw new Error("Something went wrong!");
     }
     const convertedResponse = await response.json();
-    console.log(convertedResponse);
+    processJSON(convertedResponse);
   } catch (error) {
     console.log(error);
   }
+}
+
+function processJSON(json) {
+  const weather = {
+    address: json.resolvedAddress,
+    description: json.description,
+    condition: json.currentConditions.conditions,
+    humidity: json.currentConditions.humidity,
+    temperature: json.currentConditions.temp,
+    windSpeed: json.currentConditions.windspeed,
+    windDir: json.currentConditions.winddir,
+  };
+  return weather;
 }
